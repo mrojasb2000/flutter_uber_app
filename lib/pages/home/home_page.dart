@@ -6,12 +6,22 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Uber Clone'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Text('Home Page'),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset(
+                  'assets/icons/logo_app.png',
+                  width: 150,
+                  height: 60,
+                ),
+                Text('Fácil y Rápido'),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

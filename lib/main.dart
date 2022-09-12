@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'pages/home/home_page.dart';
+import 'package:flutter_uber_app/pages/home/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +16,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Uber Clone',
       initialRoute: 'home',
       routes: {
